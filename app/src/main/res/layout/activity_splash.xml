@@ -22,8 +22,42 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Green Land"
-            />
+            android:text="@string/splash_page_text"
+            android:textSize="@dimen/splash_text_size"
+            android:textColor="@color/splashTextColor"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_page_second_text"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/splash_second_text_size"
+            android:layout_weight="1"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/splash_button_height"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:layout_margin="3dp"
+                android:text="Sign Up"
+                android:textSize="@dimen/splash_second_text_size"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:layout_margin="3dp"
+                android:text="Log In"
+                android:textSize="@dimen/splash_second_text_size"/>
+
+        </LinearLayout>
+
 
     </LinearLayout>
 </FrameLayout>
